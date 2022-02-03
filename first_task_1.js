@@ -17,4 +17,5 @@ function getProductOrder() {
   return array;
 }
 
+console.log(123);
 console.log(getProductOrder(array));
