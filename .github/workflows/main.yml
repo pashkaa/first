@@ -14,5 +14,5 @@ jobs:
     - name: Git clone my repo
       uses: actions/checkout@v1
       
-    - name: Make tests:
+    - name: Make tests
       run : npm test
