@@ -14,5 +14,8 @@ jobs:
     - name: Git clone my repo
       uses: actions/checkout@v1
       
+    - name: Chage permissions
+      uses: chmod a+x bin/bash
+      
     - name: Make tests
       run : npm test
