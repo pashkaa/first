@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  my-testing:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print Hello World from testing
+      run : echo "Hello World"
+      
+    - name: Print few comands
+      run : |
+        echo "Hello message 1"
+        echo "Hello message 2"
+        echo "Application name is: ${{ env.app_name }}"
+      
+    - name: Git clone my repo
+      uses: actions/checkout@v1
+      
+    - name: List current folders
+      run : ls -la
