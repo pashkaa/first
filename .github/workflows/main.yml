@@ -14,5 +14,5 @@ jobs:
     - name: Git clone my repo
       uses: actions/checkout@v1
       
-    - name: List current folders
-      run : node first_task_1.js 1 2 3 4 5 -7 2 12
+    - name: Make tests:
+      run : npm test
