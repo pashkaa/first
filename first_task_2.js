@@ -6,7 +6,7 @@ function getProductOrder() {
   let input = prompt('Input:\t');
   array.push(Number(input));
 
-  while (input != '') {
+  while (input !== '') {
     input = prompt('');
     input = Number(input);
     array.push(input);
